@@ -3,8 +3,7 @@ import bodyParser from "body-parser";
 import gameRouter from "./Routes/Game.rout.js"
 
 const app = express()
-app.use(bodyParser.urlencoded({extended : true}))
-app.use(bodyParser.json())
+app.use(express.json())
 
 app.use("/game",gameRouter)
 
